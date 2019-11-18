@@ -8,7 +8,7 @@ export default class WelcomeText extends Component {
   render() {
      return (      
          <View>
-  <Text style={{fontSize:this.props.fontSize}}>Welcome back, {this.props.children}!</Text>
+  <Text style={{fontSize:this.props.fontSize, paddingHorizontal:20}}>Welcome back, {this.props.children}!</Text>
         </View>
      ) 
 }

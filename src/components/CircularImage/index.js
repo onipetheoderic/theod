@@ -13,6 +13,7 @@ export default class CircularImage extends Component {
         style={{ marginLeft: 8,
             height: height,
             marginTop:10,
+            paddingLeft:10,
             width: width,
             borderRadius: 40,}}
       >

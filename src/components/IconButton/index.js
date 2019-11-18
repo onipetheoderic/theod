@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { AppRegistry, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import colors from '../Helpers/colors'
 import { systemWeights } from 'react-native-typography'
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/AntDesign';
 
-export default class Myproject extends Component {
+export default class IconButton extends Component {
  
   render() {
      return (
@@ -12,11 +12,11 @@ export default class Myproject extends Component {
        <TouchableOpacity
           style={{marginTop:10,
             width: this.props.width,
-            paddingBottom:30,
-            paddingTop:15,
+            paddingBottom:35,
+            paddingTop:10,
             marginLeft:this.props.marginLeft,
             marginRight:this.props.marginRight,
-            height: 40,
+            height: 30,
             elevation:15,
             marginLeft:15,
             backgroundColor: this.props.backgroundColor,
@@ -24,9 +24,9 @@ export default class Myproject extends Component {
           activeOpacity = { .5 }
           onPress={this.props.routeHandler} 
        > 
-        <Text style={{ color: this.props.textColor, fontSize: this.props.fontSize, fontWeight: 'bold', textAlign:'center'}}> 
-            {this.props.buttonText} 
-        </Text>    
+       <View>
+            <Text style={{color:this.props.textColor, fontSize:20, paddingLeft:16}}>{this.props.buttonText}     <Text><Icon name="arrowright" size={20} color={colors.white} /></Text></Text>
+        </View>
         </TouchableOpacity> 
       
     );

@@ -11,7 +11,7 @@ import {
 import HeaderComponent from './src/components/HeaderComponent'
 import WelcomeText from './src/components/WelcomeText'
 import Lists from './src/components/Lists'
-import Button from './src/components/Button'
+import Button from './src/components/IconButton'
 import colors from './src/components/Helpers/colors'
 import sample from './sample.json'
 
@@ -42,13 +42,13 @@ class App extends React.Component {
         <View style={{flex:1}}><HeaderComponent /></View>
     <View style={{flex:2}}><WelcomeText fontSize={35}>{this.state.fullName}</WelcomeText></View>
         <View style={{flex:5}}>
-          <Text style={{marginHorizontal:10, fontSize:13}}>TODAYS</Text>
+          <Text style={{marginHorizontal:10, fontSize:13, color:colors.gray}}>TODAYS</Text>
           {firstTwo.map(single => <Lists key={single.id} title={single.name} price={single.price} date={single.date} imageUrl={single.url} />)}
-          <Text style={{marginHorizontal:10, fontSize:13}}>Yesterdays</Text>
+          <Text style={{marginHorizontal:10, fontSize:13, color:colors.gray}}>YESTERDAYS</Text>
           {lastTwo.map(single => <Lists key={single.id} title={single.name} price={single.price} date={single.date} imageUrl={single.url} />)}
         </View>
         <View style={{flex:1, alignSelf:"center", width:'50%'}}>
-          <Button borderRadius={30} backgroundColor={colors.purpleRecessive} buttonText="Pay Now →"/>
+          <Button fontSize={15} borderRadius={30} textColor={colors.white} backgroundColor={colors.purpleRecessive} buttonText="Pay Now"/>
         </View>
 
       </View>

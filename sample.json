@@ -1,0 +1,9 @@
+[
+    {"id":1, "name":"Amazon", "price":30000, "date":"30-10-20", "url":"https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_amazon-512.png"},
+    {"id":4, "name": "Uber", "price":400000, "date":"30-10-20", "url":"https://brandslogo.net/wp-content/uploads/2018/09/uber-logo-vector.png"},
+    {"id":2, "name": "Harmony", "price":20000, "date":"30-10-20", "url":"https://brandslogo.net/wp-content/uploads/2018/09/uber-logo-vector.png"},
+    {"id":1, "name":"Amazon", "price":30000, "date":"30-10-20", "url":"https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_amazon-512.png"},
+    {"id":4, "name": "Uber", "price":400000, "date":"30-10-20", "url":"https://brandslogo.net/wp-content/uploads/2018/09/uber-logo-vector.png"},
+    {"id":2, "name": "Ebay", "price":20000, "date":"30-10-20", "url": "https://www.slashgear.com/wp-content/uploads/2012/09/eBay_old_logo.png"}
+
+]
